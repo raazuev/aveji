@@ -56,3 +56,100 @@ h1, h2, h3, h4, p {
 	text-decoration: none;
 	color: var(--black);
 }
+
+.main_page {
+	max-height: 1150px;
+	margin-bottom: 120px;
+}
+
+.main_content {
+	margin-top: 40px;
+	position: relative;
+}
+
+.main_descr h1 {
+	font-size: 72px;
+	font-weight: 400;
+	line-height: 86px;
+	text-align: left;
+	color: var(--black);
+}
+
+.main_descr p {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 28px;
+	text-align: left;
+	padding-top: 40px;
+	color: var(--black);
+}
+
+.main_descr a {
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+	bottom: 150px;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 21px;
+	color: var(--black);
+}
+
+.main_img {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main_img img {
+  	height: auto;
+  	object-fit: contain;
+  	position: relative;
+  	bottom: 100px;
+}
+
+.main_img img:first-child {
+	padding-top: 320px;
+}
+
+.professional {
+	max-height: 589px;
+}
+
+.profi_content h2 {
+	font-size: 48px;
+	font-weight: 400;
+	line-height: 66.24px;
+	text-align: left;
+	color: var(--black);
+}
+
+.profi_descr p {
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+	bottom: 200px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+	color: var(--black);
+	text-align: right;
+	margin-bottom: 25px;
+}
+
+.profi_number p {
+	position: relative;
+	bottom: 100px;
+	text-align: right;
+	color: var(--black);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+	margin-bottom: 25px;
+}
+
+.profi_number span {
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 50px;
+	text-align: left;
+}

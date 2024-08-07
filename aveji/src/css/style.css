@@ -314,3 +314,166 @@ a:hover .overlay {
 	color: var(--black);
 }
 
+.request {
+	margin-top: 120px;
+}
+
+.request_title h2 {
+	font-size: 48px;
+	font-weight: 400;
+	line-height: 77px;
+	color: var(--black);
+}
+
+.request_descr p {
+	padding-top: 32px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+	color: var(--black);
+}
+
+.request_form {
+	padding-top: 72px;
+}
+
+.input_name {
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid var(--black);
+	width: 500px;
+}
+
+.input_name:focus {
+	border-color: rgba(221, 215, 192, 1);
+	outline: none;
+}
+
+.input_name:active {
+	border-color: #E13A3A;
+}
+
+.input_email {
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid var(--black);
+	width: 500px;
+}
+
+.input_email:focus {
+	border-color: rgba(221, 215, 192, 1);
+	outline: none;
+}
+
+.input_email:active {
+	border-color: #E13A3A;
+}
+
+.input_phone {
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid var(--black);
+	width: 500px;
+}
+
+.input_phone:focus {
+	border-color: rgba(221, 215, 192, 1);
+	outline: none;
+}
+
+.input_phone:active {
+	border-color: #E13A3A;
+}
+
+input::placeholder {
+	color: var(--black);
+}
+
+.label_btn {
+	margin-top: 24px;
+	padding: 12px 20px;
+	background-color: var(--black);
+	color: var(--white);
+	transition: all .4s ease;
+}
+
+.label_btn:hover {
+	background-color: rgba(221, 215, 192, 1);
+	color: var(--black);
+	border: none;
+}
+
+.label_btn:active {
+	background-color: #A89B6A;
+	color: var(--black);
+	border: none;
+}
+
+.request_icons {
+	margin-top: 40px;
+}
+
+.request_icons a:last-child {
+	padding-left: 10px;
+}
+
+.footer {
+	margin-top: 120px;
+}
+
+.footer_descr p {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 21px;
+	color: var(--black);
+	text-transform: uppercase;
+}
+
+.footer_link {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.footer_link a {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+	color: var(--black);
+	text-decoration: none;
+}
+
+.footer_link a:hover {
+	color: rgba(221, 215, 192, 1);
+}
+
+.footer_link a:active {
+	color: #A89B6A;
+}
+
+.footer_social {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.footer_social a {
+	margin-left: 112px;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 21px;
+	color: var(--black);
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.footer_social a:hover {
+	color: rgba(221, 215, 192, 1);
+}
+
+.footer_social a:active {
+	color: #A89B6A;
+}
+
+.footer_social a:first-child {
+	position: relative;
+	left: 50px;
+}

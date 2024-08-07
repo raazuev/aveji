@@ -46,15 +46,33 @@ h1, h2, h3, h4, p {
 	text-align: left;
 	text-decoration: none;
 	color: var(--black);
+	transition: all .4s ease;
 }
 
-.menu_tel {
+.menu_nav a:hover {
+	color: rgba(221, 215, 192, 1);
+}
+
+.menu_nav a:active {
+	color: #A89B6A;
+}
+
+.menu_tel a {
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 21px;
 	text-align: left;
 	text-decoration: none;
 	color: var(--black);
+	transition: all .4s ease;
+}
+
+.menu_tel a:hover {
+	color: rgba(221, 215, 192, 1);
+}
+
+.menu_tel a:active {
+	color: #A89B6A;
 }
 
 .main_page {
@@ -84,7 +102,7 @@ h1, h2, h3, h4, p {
 	color: var(--black);
 }
 
-.main_descr a {
+.main_btn a {
 	display: flex;
 	justify-content: flex-end;
 	position: relative;
@@ -93,6 +111,17 @@ h1, h2, h3, h4, p {
 	font-weight: 400;
 	line-height: 21px;
 	color: var(--black);
+	text-transform: uppercase;
+	text-underline-offset: 8px;
+	transition: all .4s ease;
+}
+
+.main_btn a:hover {
+	color: rgba(221, 215, 192, 1);
+}
+
+.main_btn a:active {
+	color: #A89B6A;
 }
 
 .main_img {
@@ -199,23 +228,22 @@ h1, h2, h3, h4, p {
 }
 
 .project_item {
-	display: inline-block;
-    line-height: 100%;
-    padding: 10px;
+	display: flex;
+	justify-content: space-between;
 	margin-top: 32px;
 	position: relative;
 }
 
 .project_item img {
-	
+	max-width: 410px;
 }
 
 .overlay {
 	display: none;
 	position: absolute;
-	bottom: 0;
-	width: 445px;
-	height: 66px;
+	top: 170px;
+	width: 409px;
+	height: 200px;
 	background-color: rgba(33, 37, 41, 0.5)
 }
 
@@ -223,14 +251,66 @@ h1, h2, h3, h4, p {
 	display: flex;
 	justify-content: center;
 	text-align: center;
-	padding-top: 20px;
-	font-size: 16px;
+	padding-top: 90px;
+	font-size: 25px;
 	font-weight: 400;
 	line-height: 22px;
 	text-decoration: none;
 	color: var(--white);
+	transition: all .4s ease;
+}
+
+.overlay p:hover {
+	color: rgba(221, 215, 192, 1);
+}
+
+.overlay p:active {
+	color: #A89B6A;
 }
 
 a:hover .overlay {
 	display: block;
 }
+
+.feedback {
+	margin-top: 120px;
+}
+
+.feedback_title h2 {
+	font-size: 48px;
+	font-weight: 400;
+	line-height: 66px;
+}
+
+.feedback_item {
+	display: block;
+	min-width: 410px;
+	min-height: 327px;
+	border: 1px solid var(--black);
+	margin-top: 32px;
+}
+
+.feedback_img {
+	display: flex;
+	justify-content: center;
+	padding-top: 45px;
+}
+
+.feedback_username h2 {
+	padding-top: 32px;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 25px;
+	text-align: center;
+	color: var(--black);
+}
+
+.feedback_user_subtitle p {
+	padding-top: 20px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+	text-align: center;
+	color: var(--black);
+}
+

@@ -1,0 +1,132 @@
+@media (max-width: 1399px) {
+	.menu_img img {
+		width: 60px;
+	}
+	.menu_nav a {
+		font-size: 12px;
+	}
+	.menu_tel a {
+		font-size: 12px;
+	}
+	.main_content a {
+		font-size: 10px;
+		font-weight: 400;
+		line-height: 20px;
+	}
+	.main_descr h1 {
+		font-size: 60px;
+	}
+	.main_descr p {
+		font-size: 12px;
+	}
+	.main_img img:first-child {
+		width: 23%;
+	}
+	.main_img img:last-child {
+		width: 53%;
+	}
+	.profi_main h2 {
+		font-size: 34px;
+	}
+	.profi_descr p {
+		font-size: 10px;
+	}
+	.profi_descr span {
+		font-size: 22px;
+	}
+	.skills_main h2 {
+		font-size: 34px;
+	}
+	.skiils_subtitle p {
+		left: 160px;
+		font-size: 10px;
+	}
+	.skills_descr {
+		margin-right: 170px;
+	}
+	.skills_item {
+		display: flex;
+		justify-content: space-around;
+	}
+	.skills_item h3 {
+		font-size: 20px;
+	}
+	.skills_item p {
+		font-size: 10px;
+	}
+	.skills_line {
+		width: 350px;
+	}
+	.project_title h3 {
+		font-size: 17px;
+	}
+	.project_item img {
+		width: 100%;
+	}
+	.feedback_title h2 {
+		font-size: 22px;
+	}
+	.feedback_item {
+		min-width: 100px;
+	}
+	.feedback img {
+		width: 20px;
+	}
+	.feedback_username h2 {
+		font-size: 12px;
+	}
+	.feedback_user_subtitle p {
+		font-size: 8px;
+	}
+	.request_img img {
+		width: 80%;
+	}
+	.request_title h2 {
+		font-size: 26px;
+	}
+	.request_descr p {
+		font-size: 11px;
+	}
+	.input_name, .input_email, .input_phone {
+		width: 350px;
+	}
+	::placeholder {
+		font-size: 10px;
+	}
+	.label_btn {
+		width: 140px;
+		font-size: 10px;
+	}
+	.request_icons img {
+		width: 20%;
+	}
+	footer> .footer_link a, .footer_descr p, .footer_social a {
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 375px) {
+	.main_menu {
+		max-height: 42px;
+	}
+	.menu_img img {
+		width: 39px;
+	}
+	.menu_nav {
+	}
+	.menu_nav a {
+		font-size: 10px;
+	}
+	.main_descr h1 {
+		display: flex;
+		justify-content: flex-start;
+		font-size: 32px;
+		line-height: 38px;
+	}
+	.main_content a {
+		display: flex;
+		justify-content: flex-start;
+		font-size: 18px;
+		margin-top: 24px;
+	}
+}

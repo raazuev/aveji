@@ -1,0 +1,407 @@
+@import _mixin
+@import _variables
+*
+	box-sizing: border-box
+html
+	font-family: "Poppins", sans-serif
+	font-family: "Roboto", sans-serif
+	scroll-behavior: smooth
+.container
+	display: grid
+	grid-template-columns: repeat(12, 1fr)
+	min-height: 100%
+	// overflow: hidden
+	max-width: 1376px
+	margin: 0 auto
+	padding: 0 20px
+.menu_content
+		display: grid
+		grid-template-columns: 860px 210px 306px
+		.menu_tel
+			display: flex
+			justify-content: end
+			a
+				@include text_large_nav
+				text-decoration: none
+				color: $text_color
+				&:hover
+					color: $hover_color
+				&:active
+					color: $active_color
+		.menu_nav
+			a
+				display: flex
+				align-items: flex-start
+				flex-direction: column
+				text-decoration: none
+				color: $text_color
+				transition: transform .4s ease
+				@include text_large_nav
+				&:hover
+					color: $hover_color
+					transform: scale(1.09)
+				&:active
+					color: $active_color
+.main_content
+	display: grid
+	grid-template-columns: 688px 688px
+	grid-template-rows: 300px 140px 810px
+	margin-top: 50px
+	.main_title
+		display: flex
+		align-items: flex-start
+		grid-column: 1 / 2
+		grid-row: 1
+		@include h1_web
+		color: $text_color
+		text-transform: uppercase
+	.main_subtitle
+		grid-column: 1 / 2
+		grid-row: 2
+		display: flex
+		align-items: flex-end
+		@include text_largebold
+		color: $text_color
+	.main_btn
+		grid-column: 2 / 2
+		grid-row: 1
+		display: flex
+		align-items: flex-end
+		justify-content: flex-end
+		transition: all .4s ease
+		a
+			@include text_large
+			color: $text_color
+			text-underline-offset: 7px
+			text-transform: uppercase
+			transition: all .4s ease
+			&:hover
+				color: $hover_color
+				transform: scale(1.09)
+			&:active
+				color: $active_color
+	.main_img
+		&__left
+			grid-column: 1 / 2
+			grid-row: 3
+			display: flex
+			align-items: flex-end
+			justify-content: flex-start
+		&__right
+			grid-column: 2 / 2
+			grid-row: 3
+			display: flex
+			align-items: flex-end
+			justify-content: flex-end
+.professional_content
+	display: grid
+	grid-template-columns: 700px 688px
+	grid-template-rows: 308px 400px
+	margin-top: 120px
+	.professional
+		&_title
+			display: flex
+			justify-content: flex-start
+			align-items: flex-start
+			grid-column: 1 / 2
+			grid-row: 1
+			@include h2_web
+			color: $text_color
+		&_descr
+			display: flex
+			flex-wrap: wrap
+			align-content: flex-end
+			justify-content: flex-start
+			align-items: flex-start
+			grid-column: 2 / 2
+			grid-row: 1
+			@include text_normal
+			color: $text_color
+		&_info
+			margin-top: 50px
+			grid-column: 2 / 2
+			grid-row: 2
+			.profi_item
+				display: grid
+				grid-template-rows: 60px
+				h3	
+					display: flex
+					@include h3_web
+					color: $text_color
+					line-height: 2px
+					flex-grow: 1
+					flex-basis: 100px
+				p
+					display: flex
+					@include text_normal
+					color: $text_color
+					flex-grow: 2
+					flex-basis: 100px
+.steps_content
+	display: grid
+	grid-template-columns: 700px 676px
+	grid-template-rows: 100px 1000px
+	align-items: center
+	margin-top: 120px
+	.steps
+		&_title
+			display: flex
+			justify-content: flex-start
+			align-items: flex-start
+			grid-column: 1 / 2
+			grid-row: 1
+			@include h2_web
+			color: $text_color
+		&_subtitle
+			display: flex
+			flex-wrap: wrap
+			align-content: flex-end
+			justify-content: start
+			align-items: flex-start
+			grid-column: 2 / 2
+			grid-row: 1
+			@include text_normal
+			color: $text_color
+		&_inner
+			grid-column: 2 
+			grid-row: 2
+			.steps_item
+				display: grid
+				grid-template-rows: repeat(5, 200px)
+				.item
+					display: flex
+					justify-content: space-between
+					border-bottom: 2px solid #000
+					h3
+						text-align: left
+						@include h3_web
+						color: $text_color
+						flex-grow: 1
+						flex-basis: 330px
+					p
+						display: flex
+						align-items: center
+						text-align: left
+						@include text_normal
+						color: $text_color
+						flex-grow: 2
+						flex-basis: 300px
+.projects_content
+	display: grid
+	grid-template-columns: 450px 450px 450px
+	grid-template-rows: 100px 580px 700px
+	gap: 20px
+	.projects_title
+		grid-column: 1 / 3
+		grid-row: 1
+		h3
+			@include h3_web
+			color: $text_color
+	.projects_inner
+		grid-column: 1
+		grid-row: 2
+	.projects_inner:nth-child(2)
+		grid-column: 2
+		grid-row: 2
+	.projects_inner:nth-child(3)
+		grid-column: 3
+		grid-row: 2
+	.projects_inner:nth-child(4)
+		grid-column: 1
+		grid-row: 3
+	.projects_inner:nth-child(5)
+		grid-column: 2
+		grid-row: 3
+	.projects_inner:nth-child(6)
+		grid-column: 3
+		grid-row: 3
+	.projects_inner
+		a
+			display: block
+			position: relative
+			text-decoration: none
+			@include text_largebold
+			color: $hover_color
+			.overlay
+				display: flex
+				justify-content: center
+				align-items: center
+				position: absolute
+				top: 0
+				left: 0
+				right: 6px
+				bottom: 6px
+				opacity: 0
+				background-color: rgba(0, 0, 0, 0.5)
+				transition: opacity 0.3s ease
+				&:hover
+					color: $hover_color
+					opacity: 1
+				&:active
+					color: $active_color
+.feedback_content
+	display: grid
+	grid-template-columns: repeat(3, 458px)
+	grid-template-rows: 120px 330px
+	gap: 10px
+	.feedback
+		&_title
+			grid-column: 1 / 3
+			grid-row: 1 / 2
+		&_inner
+			border: 1px solid $text_color
+			grid-column: span 1
+			grid-row: 2 / 2
+		&_inner:nth-child(2)
+			grid-column: 2 / 3
+			grid-row: 2 / 2
+		&_inner:nth-child(3)
+			grid-column: 3 / 3
+			grid-row: 2 / 2
+	.feedback_inner
+		.item
+			display: flex
+			flex-direction: column
+			align-items: center
+			padding-top: 50px
+			img
+				flex-grow: 1
+				flex-basis: 40px
+			h3
+				@include text_largebold
+				color: $text_color
+				flex-grow: 1
+				flex-basis: 30px
+			p
+				text-align: center
+				@include text_normal
+				color: $text_color
+				flex-grow: 1
+	.feedback_title
+		h3
+			@include h3_web
+			color: $text_color
+.form_content
+	margin-top: 120px
+	display: grid
+	grid-template-columns: repeat(2, 688px)
+	grid-template-rows: 130px 100px 300px 180px
+	.form
+		&_img
+			grid-column: 1 / 2
+		&_title
+			grid-column: 2 / 2
+			grid-row: 1 / 4
+			@include h2_web
+			color: $text_color
+		&_subtitle
+			grid-column: 2 / 2 
+			grid-row: 2 / 4
+			@include text_normal
+			color: $text_color
+		&_request
+			grid-column: 2 / 2
+			grid-row: 3 / 4
+			p
+				padding-bottom: 20px
+			input
+				&::placeholder
+					// transform: translateY(-6px)
+					@include text_normal
+					color: $text_color
+				&:focus::placeholder
+					color: $active_color
+			.input_name
+				background: transparent
+				border: none
+				border-bottom: 1px solid $text_color
+				width: 500px
+				&:focus
+					border-color: $hover_color
+					outline: none
+				&:active
+					border-color: $active_color
+			.input_email
+				background: transparent
+				border: none
+				border-bottom: 1px solid $text_color
+				width: 500px
+				&:focus 
+					border-color: $active_color
+					outline: none
+				&:active
+					border-color: $active_color
+			.input_phone
+				background: transparent
+				border: none
+				border-bottom: 1px solid $text_color
+				width: 500px
+				&:focus 
+					border-color: $active_color
+					outline: none
+				&:active
+					border-color: $active_color
+			.label_btn
+				padding: 12px 20px
+				border-radius: 8px
+				background-color: $button_bg_color
+				color: $button_text_color
+				transition: transform .4s ease
+				&:hover
+					background-color: $hover_color
+					color: $text_color
+					border: none
+				&:active
+					transform: translate(0em, 0.7em)
+					background-color: $active_color
+					color: $text_color
+					border: none
+		&_icons
+			grid-column: 2 / 2
+			grid-row: 4 / 4
+			a:last-child
+				padding-left: 10px
+.footer_content
+	display: grid
+	grid-template-columns: repeat(3, 458px)
+	grid-template-rows: 100px	
+	.footer
+		&_descr
+			display: flex
+			align-items: end
+			grid-column: 1 span
+			grid-row: 1
+			p
+				@include text_large
+				color: $text_color
+				text-transform: uppercase
+		&_link
+			display: flex
+			align-items: center
+			justify-content: space-evenly
+			grid-column: 2 / 3
+			grid-row: 1
+			a
+				@include text_normal
+				color: $text_color
+				text-decoration: none
+				&:hover
+					color: $hover_color
+				&:active
+					color: $active_color
+		&_social
+			display: flex
+			justify-content: end
+			align-items: center
+			grid-column: 3 / 3
+			grid-row: 1
+			a	
+				margin-right: 30px
+				@include text_large
+				color: $text_color
+				text-decoration: none
+				text-transform: uppercase
+				&:hover
+					color: $hover_color
+				&:active
+					color: $active_color
